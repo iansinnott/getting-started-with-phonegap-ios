@@ -1,8 +1,15 @@
 # Getting Started With Phonegap For iOS
 
+This is a quick guide to getting set up to make iOS apps with [Phonegap][phonegap]. This is unrelated to Android development, so if making Android apps is you're goal instead, check out [the docs here][android_docs].
+
 ### In short: 
 
-Open Terminal and do the following: 
+Make sure that you have [Xcode][xcode] and [Node][nodejs] installed with npm. If any of that sounds unfamiliar, follow those links (npm comes with Node). Then open Terminal and do the following: 
+
+[xcode]: https://itunes.apple.com/en/app/xcode/id497799835
+[nodejs]: http://nodejs.org/
+[phonegap]: http://phonegap.com/
+[android_docs]: http://docs.phonegap.com/en/edge/guide_platforms_android_index.md.html#Android%20Platform%20Guide
 
 1. `npm install --global phonegap`
 2. `phonegap create hello com.example.hello HelloWorld`
@@ -12,7 +19,7 @@ Open Terminal and do the following:
 
 To run the app in the iOS emulator: 
 
-    phonegap run ios
+    phonegap run ios --emulator
 
 **Note:** The `run` command will do `build` for you, but if you don't want to instantly run the app in the simulator then use `build` separately.
 
