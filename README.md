@@ -4,9 +4,11 @@
 
 Open Terminal and do the following: 
 
-1. `npm i -g phonegap`
+1. `npm install --global phonegap`
 2. `phonegap create hello com.example.hello HelloWorld`
 3. `phonegap build ios`
+
+**Note:** In step two, the first `hello` is the name of the folder to create the app in. The `com.example.hello` is basically just another name for your app, so change the `example` and `hello` portions to whatever you like. The `HelloWorld` at the very end of the command designates the app name (I think), so call it whatever you like (without spaces).
 
 To run the app in the iOS emulator: 
 
@@ -16,7 +18,7 @@ To run the app in the iOS emulator:
 
 If the iOS simulator node module isn't installed already (it's probably not), then you will need to install it. This is supposed to be automatic, but my copy of Phonegap threw an error for some reason. I this happens just install it manually: 
 
-    npm i -g ios-sim
+    npm instal --global ios-sim
 
 **The documentation for Phonegap is seriously out of date, and it doesn't ever seem to distinguish between Cordova and Phonegap in a meaningful way.**
 
@@ -32,7 +34,7 @@ Make sure you're iPhone or iPad is connected via USB and then run:
 
 This, as with deploying to the simulator is supposed to work automatically out of the box but it also gave me problems when trying to install the necessary dependency, ios-deploy. If you get errors, as above just install manually: 
 
-    npm i -g ios-deploy
+    npm install --global ios-deploy
 
 Now you should be able to run your app on iOS :)
 
